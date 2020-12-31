@@ -79,7 +79,7 @@
 	.title {
 		position: absolute;
 		left: 14.5rpx;
-		top:4.5rpx;
+		top:6rpx;
 		font-size: 11rpx;
 		color:#fff;
 	}

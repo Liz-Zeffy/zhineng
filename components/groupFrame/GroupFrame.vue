@@ -35,7 +35,7 @@
 		position: absolute;
 		bottom:9rpx;
 		left:9rpx;
-		 
+		box-sizing: border-box;
 		width: 730rpx;
 		height: 357rpx;
 		background: #FFF;
@@ -52,10 +52,13 @@
 		align-items: center;
 		padding:0 16rpx;
 		box-sizing: border-box;
-		bottom:0;
+		bottom:-0.58rpx;
+		left:-1.2rpx;
 		width:730rpx;
 		height:40rpx;
 		background:#4F9AFF;
+		border-bottom-right-radius:17px;
+		border-bottom-left-radius:17px;
 	}
 	.bottomItem {
 		width:33.33%;

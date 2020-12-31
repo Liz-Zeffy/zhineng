@@ -25,14 +25,23 @@
 								ref="drawer"
 								mode="right"
 							 :maskClick="true">
-			<view></view>				 
-			<view class="top">
-				<image src="/static/images/group/modify_title.png" alt="" mode="widthFix"/>
-				<icon type="clear"/>
-			</view>
-			<view class="title"><text>柜体信息</text></view>
+			<view class="top_info">
+				<view class="top">
+					<image src="/static/images/group/modify_title.png" alt="" mode="widthFix"/>
+					<icon type="clear"/>
+				</view>
+				<view class="title"><text>柜体信息</text></view>
+			</view>				 
+			<radio-group>
+				<label>
+					<radio value="主柜" />
+					<radio value="层架主柜" />
+				</label>
+			</radio-group> 
+			<chack-radio/>
 
 		</uni-drawer>
+
 	</view>
 </template>
 
@@ -41,13 +50,15 @@
 	import StatusBar from "../../components/common/statusBar/StatusBar.vue"
 	import GroupFrame from "../../components/groupFrame/GroupFrame.vue"
 	import UniDrawer from "../../components/uni-drawer/uni-drawer.vue"
-
+	import ChackRadio from "../../components/common/chackRadio/ChackRadio.vue"
+	
 	export default {
 		components:{
 			GroupList,
 			StatusBar,
 			GroupFrame,
-			UniDrawer
+			UniDrawer,
+			ChackRadio
 		},
 
 		data() {
